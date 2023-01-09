@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { PipesTestingPipe } from '../pipes-testing.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,8 +11,10 @@ import { PipesTestingPipe } from '../pipes-testing.pipe';
     HomeComponent,
     PipesTestingPipe
   ],
-  imports: [
-    CommonModule
+  imports:[
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     HomeComponent,
