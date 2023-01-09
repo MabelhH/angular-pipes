@@ -1,24 +1,33 @@
+<div class="sesion-12">
+    <h1 class="text-center">{{title}}</h1>
+
+<div class="container-fluid">
+    <div class="pipes">
+           <br>
+           <div class="tabla1">
+              <p>valor:<input type="text" [(ngModel)]="texto"></p>
+              <span>{{texto | uppercase}}</span>
+           </div>   
+    </div>          
+</div>
+<br>
 <div class="container">
-    <div class="">
-        <form action="">
-           <div class="mt-4">
-           <p>valor:<input type="text" [ngModel]="texto">
-           <p>{{texto}}</p>
-           </div>
-            <br>
-           <div class="">
-            <p>valor:<input type="number">
-            <br>
-            <div>
-                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>selecione una moneda</option>
-                    <option value="1">USD</option>
-                    <option value="2">EUR</option>
-                    <option value="3">GBP</option>
-                    <option value="4">S/</option>
-                  </select>
-                </div>    
-           </div>
-        </form>
+    <div class="pipes2">
+        <div class="tabla">
+            <label for="">valor:</label>
+            <input type="number" [(ngModel)]="moneda">
+         </div>
+        <br>
+        <div class="">
+          <select class="form-select"  aria-label="Floating label select example" [(ngModel)]="billetes">
+            <option selected>seleciona moneda<option>
+            <option value="1">EUR</option>
+            <option value="2">USD</option>
+          </select>
+       </div>
+       <p>{{moneda | pipesTesting:billetes}}</p>
+
     </div>
+</div>
+
 </div>

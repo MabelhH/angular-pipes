@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +6,12 @@ import { Component, Output } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  texto = "";
-  
+texto:string='hola mundo';
+moneda: number= 0;
+billetes='';
+title='Pipes'
+
+
 
 
   
